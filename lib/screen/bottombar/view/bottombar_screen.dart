@@ -26,15 +26,15 @@ class _BottombarScreenState extends State<BottombarScreen> {
     photoProviderfalse = Provider.of<PhotoProvider>(context, listen: false);
     return SafeArea(
       child: Scaffold(
-        body: screen[photoProvidertrue!.i],
+        body: screen[photoProvidertrue!.bari],
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: photoProvidertrue!.i,
+          currentIndex: photoProvidertrue!.bari,
           backgroundColor: Colors.black,
           selectedItemColor: Colors.white,
           unselectedItemColor: Colors.white,
           iconSize: 30,
           onTap: (value) {
-            photoProviderfalse!.selectIndex(value);
+            photoProviderfalse!.barIndex(value);
           },
           items: [
             BottomNavigationBarItem(

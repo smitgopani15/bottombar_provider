@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class PhotoProvider extends ChangeNotifier {
   int i = 0;
   int photoi = 0;
+  int bari = 0;
 
   List imageList = [
     "assets/images/1.png",
@@ -22,6 +23,11 @@ class PhotoProvider extends ChangeNotifier {
 
   void changeIndex(int index) {
     photoi = index;
+    notifyListeners();
+  }
+
+  void barIndex(int index) {
+    bari = index;
     notifyListeners();
   }
 }
