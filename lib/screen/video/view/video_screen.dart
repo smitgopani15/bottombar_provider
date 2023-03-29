@@ -98,7 +98,10 @@ class _VideoScreenState extends State<VideoScreen> {
                       child: Container(
                         height: double.infinity,
                         width: 80,
-                        color: Colors.black,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.black12,
+                        ),
                         child: Image.asset(
                           videoProviderfalse!.imageList[index],
                           fit: BoxFit.contain,

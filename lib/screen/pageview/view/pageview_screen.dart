@@ -92,7 +92,10 @@ class _PageviewScreenState extends State<PageviewScreen> {
               child: Container(
                 height: double.infinity,
                 width: double.infinity,
-                color: Colors.black,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(8),
+                  color: Colors.black12,
+                ),
                 child: Image.asset(
                   photoProviderfalse!.imageList[index],
                   fit: BoxFit.contain,

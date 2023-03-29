@@ -95,7 +95,10 @@ class _PhotoScreenState extends State<PhotoScreen> {
                   );
                 },
                 child: Container(
-                  color: Colors.black,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(8),
+                    color: Colors.black12,
+                  ),
                   child: Image.asset(
                     photoProviderfalse!.imageList[index],
                     fit: BoxFit.contain,
